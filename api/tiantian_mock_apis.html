@@ -1,0 +1,281 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF8">
+    <title></title>
+    <style type="text/css">
+        #container {
+            margin: 8px;
+        }
+
+        .param-table {
+            background: #E6E6E6;
+            border: 1px solid #FFF;
+            margin: 12px 0;
+            border-collapse: collapse;
+        }
+
+        .param-table th {
+            background: gray;
+            color: #FFF;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            border: 1px solid #FFF;
+            padding: 5px;
+        }
+
+        .param-table td {
+            border-collapse: collapse;
+            border: 1px solid #FFF;
+            font-size: 12px;
+            padding: 5px;
+        }
+
+        .param-table .th-name {
+            min-width: 140px;
+        }
+
+        .param-table .th-identifier {
+            min-width: 140px;
+        }
+
+        .param-table .th-type {
+            min-width: 100px;
+        }
+
+        .param-table .th-remark {
+            min-width: 200px;
+        }
+
+        .param-table .td-name {}
+
+        .param-table .td-identifier {}
+
+        .param-table .td-type   { color: #990000; }
+
+        .param-table .td-remark { color: #666; }
+
+        .param-table .tr-level-1 { background: #F5F5F5; }
+        .param-table .tr-level-1 .td-identifier { padding-left: 5px; }
+
+        .param-table .tr-level-2 { background: #E6E6E6; }
+        .param-table .tr-level-2 .td-identifier { padding-left: 15px; }
+
+        .param-table .tr-level-3 { background: #CCCCCC; }
+        .param-table .tr-level-3 .td-identifier { padding-left: 25px; }
+
+        .param-table .tr-level-4 { background: #E6E6E6; }
+        .param-table .tr-level-4 .td-identifier { padding-left: 35px; }
+
+        .param-table .tr-level-5 { background: #CCCCCC; }
+        .param-table .tr-level-5 .td-identifier { padding-left: 45px; }
+
+        .param-table .tr-level-6 { background: #E6E6E6; }
+        .param-table .tr-level-6 .td-identifier { padding-left: 55px; }
+
+        .param-table .tr-level-7 { background: #CCCCCC; }
+        .param-table .tr-level-7 .td-identifier { padding-left: 65px; }
+
+        .param-table .tr-level-8 { background: #E6E6E6; }
+        .param-table .tr-level-8 .td-identifier { padding-left: 75px; }
+
+        .param-table .tr-level-9 { background: #CCCCCC; }
+        .param-table .tr-level-9 .td-identifier { padding-left: 85px; }
+
+        .param-table .tr-level-10 { background: #E6E6E6; }
+        .param-table .tr-level-10 .td-identifier { padding-left: 95px; }
+
+        .param-table .tr-level-11 {
+            background: #CCCCCC;
+        }
+        .param-table .tr-level-11 .td-identifier { padding-left: 105px; }
+
+        .param-table .tr-level-12 {
+            background: #E6E6E6;
+        }
+        .param-table .tr-level-12 .td-identifier { padding-left: 115px; }
+
+        .param-table .tr-level-13 {
+            background: #CCCCCC;
+        }
+        .param-table .tr-level-13 .td-identifier { padding-left: 125px; }
+    </style>
+</head>
+<body>
+<div id="container">
+            <div class="module">
+            <h1>1&nbsp;用户登录模块</h1>
+                            <div class="page">
+                    <h2>1.1&nbsp;登陆注册页面</h2>
+                                            <div class="action">
+                            <h3>1.1.1&nbsp;用户注册</h3>
+
+                            <h3>URL</h3>
+                            <div>:id/www.tiantianpaiban.com/users</div>
+
+                            <h3>Method</h3>
+                            <div>PUT</div>
+
+                            <h3>Description</h3>
+                            <div></div>
+
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">用户密码</td><td class="td-identifier">password</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">电话号码</td><td class="td-identifier">phoneNumber</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">返回的数据头</td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---员工的uuid</td><td class="td-identifier">uuId</td><td class="td-type">string</td><td class="td-remark">@mock=38cb8c9b-9d52-42d5-b07b-0b352ba24ce1</td></tr><tr class="tr-level-1"><td class="td-name">返回的状态码</td><td class="td-identifier">status</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-1"><td class="td-name">返回的状态信息</td><td class="td-identifier">msg</td><td class="td-type">string</td><td class="td-remark">@mock=注册成功</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.2&nbsp;用户登录</h3>
+
+                            <h3>URL</h3>
+                            <div>:id/www.tiantianpaiban.com/users</div>
+
+                            <h3>Method</h3>
+                            <div>GET</div>
+
+                            <h3>Description</h3>
+                            <div></div>
+
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">返回的状态码</td><td class="td-identifier">status</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-1"><td class="td-name">返回的数据头</td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---员工已经加入的公司列表</td><td class="td-identifier">organizationListView</td><td class="td-type">array&lt;object&gt;</td><td class="td-remark"></td></tr><tr class="tr-level-3"><td class="td-name">------公司名称</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark">@mock=123</td></tr><tr class="tr-level-3"><td class="td-name">------公司id</td><td class="td-identifier">uuid</td><td class="td-type">string</td><td class="td-remark">@mock=292f2ac6-c92c-462d-b16f-4b3b1519f3ba</td></tr><tr class="tr-level-2"><td class="td-name">---用户id</td><td class="td-identifier">userId</td><td class="td-type">string</td><td class="td-remark">@mock=8331cae6-ec87-411b-8cea-ecd35526584c</td></tr><tr class="tr-level-1"><td class="td-name">返回的状态信息</td><td class="td-identifier">msg</td><td class="td-type">string</td><td class="td-remark">@mock=登陆成功</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.3&nbsp;添加企业</h3>
+
+                            <h3>URL</h3>
+                            <div>:id/www.tiantianpaiban.com/organizations</div>
+
+                            <h3>Method</h3>
+                            <div>PUT</div>
+
+                            <h3>Description</h3>
+                            <div></div>
+
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">联系人QQ</td><td class="td-identifier">contactQQ</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">公司姓名</td><td class="td-identifier">name</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">联系人邮箱</td><td class="td-identifier">email</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">联系人名字</td><td class="td-identifier">contactName</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">联系人手机</td><td class="td-identifier">contactPhone</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">返回的数据头</td><td class="td-identifier">data</td><td class="td-type">string</td><td class="td-remark">@mock=企业创建成功</td></tr><tr class="tr-level-1"><td class="td-name">状态码</td><td class="td-identifier">status</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.4&nbsp;员工加入企业-编辑中</h3>
+
+                            <h3>URL</h3>
+                            <div>:id/www.tiantianpaiban.com/users/</div>
+
+                            <h3>Method</h3>
+                            <div>GET</div>
+
+                            <h3>Description</h3>
+                            <div></div>
+
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.5&nbsp;添加商店</h3>
+
+                            <h3>URL</h3>
+                            <div>:id/www.tiantianpaiban.com/organization/5d87484c-ba99-4c79-8a91-68d96207be1d/store</div>
+
+                            <h3>Method</h3>
+                            <div>PUT</div>
+
+                            <h3>Description</h3>
+                            <div></div>
+
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">商店的id</td><td class="td-identifier">organization_id</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">商店地址</td><td class="td-identifier">address</td><td class="td-type">number</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">商店名称</td><td class="td-identifier">name</td><td class="td-type">number</td><td class="td-remark"></td></tr></table>
+
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">商店信息</td><td class="td-identifier">msg</td><td class="td-type">string</td><td class="td-remark">@mock=商店创建成功</td></tr><tr class="tr-level-1"><td class="td-name">商店的状态码</td><td class="td-identifier">status</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.6&nbsp;添加员工</h3>
+
+                            <h3>URL</h3>
+                            <div>:id/www.tiantianpaiban.com/store/5d87484c-ba99-4c79-8a91-68d96207be1d/employee</div>
+
+                            <h3>Method</h3>
+                            <div>PUT</div>
+
+                            <h3>Description</h3>
+                            <div></div>
+
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">员工email</td><td class="td-identifier">email</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">名字</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">员工角色</td><td class="td-identifier">role</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">是否发送邮件</td><td class="td-identifier">ifSendEmail</td><td class="td-type">boolean</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">商店id</td><td class="td-identifier">store_id</td><td class="td-type">string</td><td class="td-remark">@mock=5d87484c-ba99-4c79-8a91-68d96207be1d</td></tr><tr class="tr-level-1"><td class="td-name">是否发送讯息</td><td class="td-identifier">ifSendMessage</td><td class="td-type">boolean</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">电话</td><td class="td-identifier">phone</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">返回的状态信息</td><td class="td-identifier">msg</td><td class="td-type">string</td><td class="td-remark">@mock=员工邀请成功</td></tr><tr class="tr-level-1"><td class="td-name">返回的状态码</td><td class="td-identifier">status</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.7&nbsp;员工企业选择</h3>
+
+                            <h3>URL</h3>
+                            <div>:id/www.tiantianpaiban.com/organizations/organizationId</div>
+
+                            <h3>Method</h3>
+                            <div>GET</div>
+
+                            <h3>Description</h3>
+                            <div>员工登陆时看到列表的时候选择集团</div>
+
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">企业id</td><td class="td-identifier">organizationId</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">状态信息</td><td class="td-identifier">msg</td><td class="td-type">string</td><td class="td-remark">@mock=企业选择成功</td></tr><tr class="tr-level-1"><td class="td-name">状态码</td><td class="td-identifier">status</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr><tr class="tr-level-1"><td class="td-name">返回数据头</td><td class="td-identifier">data</td><td class="td-type">object</td><td class="td-remark"></td></tr><tr class="tr-level-2"><td class="td-name">---企业名称</td><td class="td-identifier">name</td><td class="td-type">string</td><td class="td-remark">@mock=zq12</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.8&nbsp;验证码</h3>
+
+                            <h3>URL</h3>
+                            <div>:id/www.tiantianpaiban.com/code</div>
+
+                            <h3>Method</h3>
+                            <div>POST</div>
+
+                            <h3>Description</h3>
+                            <div></div>
+
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">电话号码</td><td class="td-identifier">phoneNumber</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">返回的验证码</td><td class="td-identifier">code</td><td class="td-type">string</td><td class="td-remark">@mock=z567</td></tr></table>
+                        </div>
+                                            <div class="action">
+                            <h3>1.1.9&nbsp;用户密码找回</h3>
+
+                            <h3>URL</h3>
+                            <div>:id/www.tiantianpaiban/users</div>
+
+                            <h3>Method</h3>
+                            <div>PUT</div>
+
+                            <h3>Description</h3>
+                            <div>{
+  "phoneNumber":"123456",
+  "password":"123456"
+  "code":
+}</div>
+
+                            <h3>Request Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">验证码</td><td class="td-identifier">code</td><td class="td-type">string</td><td class="td-remark">@mock=z576</td></tr><tr class="tr-level-1"><td class="td-name">密码</td><td class="td-identifier">password</td><td class="td-type">string</td><td class="td-remark"></td></tr><tr class="tr-level-1"><td class="td-name">电话号码</td><td class="td-identifier">phoneNumber</td><td class="td-type">string</td><td class="td-remark"></td></tr></table>
+
+                            <h3>Response Param List</h3>
+                            <table class="param-table"><thead><th class="th-name">Name</th><th class="th-identifier">Identifier</th><th class="th-type">Type</th><th class="th-remark">Remark</th></thead><tr class="tr-level-1"><td class="td-name">返回状态信息</td><td class="td-identifier">msg</td><td class="td-type">string</td><td class="td-remark">@mock=修改成功</td></tr><tr class="tr-level-1"><td class="td-name">返回的状态码</td><td class="td-identifier">status</td><td class="td-type">number</td><td class="td-remark">@mock=0</td></tr></table>
+                        </div>
+                                    </div>
+                    </div>
+    </div>
+</body>
+</html>
